@@ -8,6 +8,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         app: "./assets/app.js",
+        //Composants
+        navbar: "./assets/components/navbar/indexnavbar.jsx",
+
+        //Portfolio
+        portfolio: "./assets/components/portfolio/indexportfolio.jsx",
       },
     },
   },

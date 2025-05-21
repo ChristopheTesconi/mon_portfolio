@@ -1,0 +1,11 @@
+.navbar {
+  z-index: 1030;
+  .nav-link,
+  .navbar-brand {
+    color: black !important;
+
+    &:hover {
+      color: rgb(165, 180, 252) !important;
+    }
+  }
+}

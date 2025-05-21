@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	{{parent()}}
+{% endblock %}
+
+{% block title %}ChristophePortfolio{% endblock %}
+
+{% block body %}
+	<div id="id-portfolio"></div>
+{% endblock %}
+
+{% block javascripts %}
+	{{parent()}}
+	{{ vite_entry_script_tags('portfolio',{dependency:'react'}) }}
+{% endblock %}
