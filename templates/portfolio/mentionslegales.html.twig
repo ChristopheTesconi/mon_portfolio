@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	{{parent()}}
+{% endblock %}
+
+{% block title %}Mentions légales{% endblock %}
+
+{% block body %}
+	<div id="id-mentionslegales"></div>
+{% endblock %}
+
+{% block javascripts %}
+	{{parent()}}
+	{{ vite_entry_script_tags('mentionslegales',{dependency:'react'}) }}
+{% endblock %}

@@ -15,4 +15,12 @@ final class PortfolioController extends AbstractController
             'controller_name' => 'PortfolioController',
         ]);
     }
+
+    #[Route('/mentions-legales', name: 'app_mentions-legales')]
+    public function mentionslegales(): Response
+    {
+        return $this->render('portfolio/mentionslegales.html.twig', [
+            'controller_name' => 'PortfolioController',
+        ]);
+    }
 }

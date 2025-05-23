@@ -7,9 +7,12 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        app: "./assets/app.js",
+        app: "./assets/app.jsx",
         //Composants
         navbar: "./assets/components/navbar/indexnavbar.jsx",
+        footer: "./assets/components/footer/indexfooter.jsx",
+        mentionslegales:
+          "./assets/components/mentionslegales/indexmentionslegales.jsx",
 
         //Portfolio
         portfolio: "./assets/components/portfolio/indexportfolio.jsx",

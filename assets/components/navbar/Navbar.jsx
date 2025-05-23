@@ -1,11 +1,11 @@
 import React from "react";
-import "../../styles/navbar/navbar.scss";
+import "../../styles/navbarfooter/navbar.scss";
 
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg fixed-top bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           Navbar
         </a>
         <button
@@ -22,7 +22,7 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarColor01">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/">
                 Accueil
                 <span className="visually-hidden">(current)</span>
               </a>

@@ -1,0 +1,30 @@
+.mentions-legales {
+  padding: 2rem 0rem 0rem 0rem;
+  max-width: 800px;
+  margin: auto;
+  color: #1f2039;
+  min-height: 85vh;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  section {
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #4f46e5;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+  }
+  .last-section {
+    padding-bottom: -10rem;
+    margin-bottom:-10rem;
+  }
+}
