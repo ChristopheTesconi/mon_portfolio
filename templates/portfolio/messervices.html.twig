@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	{{parent()}}
+{% endblock %}
+
+{% block title %}Mes Services{% endblock %}
+
+{% block body %}
+	<div id="id-messervices"></div>
+{% endblock %}
+
+{% block javascripts %}
+	{{parent()}}
+	{{ vite_entry_script_tags('messervices',{dependency:'react'}) }}
+{% endblock %}

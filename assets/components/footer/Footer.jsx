@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-links">
-        <a href="/" target="_blank" rel="noopener noreferrer">
+        <a href="/contact" target="_blank" rel="noopener noreferrer">
           Contact
         </a>
         <a href="mailto:chris.tesconi@gmail.com">Email</a>

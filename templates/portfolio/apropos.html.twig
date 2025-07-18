@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block title %}À propos{% endblock %}
+
+{% block body %}
+    <div id="id-apropos"></div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ vite_entry_script_tags('apropos', { dependency: 'react' }) }}
+{% endblock %}

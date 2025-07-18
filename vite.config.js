@@ -16,6 +16,11 @@ export default defineConfig({
 
         //Portfolio
         portfolio: "./assets/components/portfolio/indexportfolio.jsx",
+        contact: "./assets/components/portfolio/contact/indexcontact.jsx",
+        messervices:
+          "./assets/components/portfolio/mesServices/indexmesservices.jsx",
+        apropos: "./assets/components/portfolio/apropos/indexapropos.jsx",
+        moncv: "./assets/components/portfolio/moncv/indexmoncv.jsx",
       },
     },
   },

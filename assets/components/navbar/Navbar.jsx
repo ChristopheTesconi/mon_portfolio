@@ -1,12 +1,15 @@
 import React from "react";
 import "../../styles/navbarfooter/navbar.scss";
+import monlogo from "../../images/portfolio/monlogo.png";
 
 export default function Navbar() {
+  const isHomePage = window.location.pathname === "/";
+
   return (
     <nav className="navbar navbar-expand-lg fixed-top bg-body-tertiary">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          Navbar
+          <img src={monlogo} alt="monlogo" />
         </a>
         <button
           className="navbar-toggler"
@@ -28,21 +31,32 @@ export default function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Mes projets
+              {isHomePage ? (
+                <a className="nav-link" href="#mesprojets">
+                  Mes projets
+                </a>
+              ) : (
+                <a className="nav-link" href="/#mesprojets">
+                  Mes projets
+                </a>
+              )}
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/messervices">
+                Mes Services
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/moncv">
                 Mon CV
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/apropos">
                 À propos
               </a>
             </li>
-            <li className="nav-item dropdown">
+            {/* <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
@@ -68,6 +82,11 @@ export default function Navbar() {
                   Separated link
                 </a>
               </div>
+            </li> */}
+            <li className="nav-item">
+              <a className="nav-link" href="/contact">
+                Contact
+              </a>
             </li>
           </ul>
           <li className="d-flex nav-item">

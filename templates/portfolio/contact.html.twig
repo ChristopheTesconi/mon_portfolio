@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block title %}Contact - ChristophePortfolio{% endblock %}
+
+{% block body %}
+    <div id="id-contact"></div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ vite_entry_script_tags('contact', { dependency: 'react' }) }}
+{% endblock %}
