@@ -2,8 +2,10 @@
 
 ## Description
 
-Ce projet est mon portfolio personnel développé avec Symfony 7, Vite et React.  
-L'objectif est d'avoir une application moderne avec un backend robuste et un frontend réactif et performant.
+Ce portfolio a été conçu comme un projet complet en utilisant Symfony pour le back-end (gestion des routes, rendu Twig et API) et React pour le front-end dynamique (Navbar, Portfolio, Formulaire de contact).
+Il utilise Vite.js pour le bundling, Bootstrap 5 (Lux) pour le style de base et est entièrement multilingue (français/anglais).
+J’ai mis en place une architecture modulaire (chaque section est un composant React), un formulaire de contact fonctionnel avec envoi d’email via Symfony Mailer, et une organisation SEO-friendly avec sitemap.xml et balises meta personnalisées.
+Ce projet illustre ma capacité à créer des sites modernes, performants et maintenables de A à Z.
 
 ---
 

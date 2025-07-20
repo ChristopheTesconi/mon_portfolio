@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{% block title %}Portfolio{% endblock %}</title>
+        <meta name="description" content="{% block meta_description %}Développeur web fullstack (Symfony, React,PHP, JavaScript) — Je crée des sites et applications modernes, performantes et optimisées pour vosbesoins.{% endblock %}">
         <link rel="icon" href="{{ asset('monlogo.png') }}" type="image/png">
         <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/lux/bootstrap.min.css" rel="stylesheet">
         {% block stylesheets %}
@@ -13,6 +14,19 @@
         {% block javascripts %}
             {{ vite_entry_script_tags('app') }}
         {% endblock %}
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Christophe Tesconi",
+        "jobTitle": "Développeur Web Fullstack",
+        "url": "https://ton-site.com",
+        "sameAs": [
+            "https://github.com/ChristopheTesconi",
+            "https://www.linkedin.com/in/christophetesconi/"
+        ]
+        }
+        </script>
     </head>
 
     <body>

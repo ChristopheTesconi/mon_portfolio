@@ -22,6 +22,15 @@ export default function About() {
           <img src={christophe} alt="Christophe Tesconi" />
         </div>
       </div>
+
+      <div className="about-site">
+        <h2>{texts.siteTitle}</h2>
+        <p dangerouslySetInnerHTML={{ __html: texts.siteIntro }} />
+        <p dangerouslySetInnerHTML={{ __html: texts.siteStack }} />
+        <p dangerouslySetInnerHTML={{ __html: texts.siteFeatures }} />
+        <p dangerouslySetInnerHTML={{ __html: texts.siteGoal }} />
+        <p dangerouslySetInnerHTML={{ __html: texts.siteCTA }} />
+      </div>
     </section>
   );
 }

@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: 100vh;
 
   .about-container {
@@ -65,10 +66,50 @@
     }
   }
 
+  // Nouvelle section : "Comment j'ai construit ce site"
+  .about-site {
+    max-width: 900px;
+    width: 100%;
+    margin-top: 5vh;
+    padding: 2rem;
+    background: white;
+    border: 1px solid rgba(200, 200, 200, 0.4);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    color: #333;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: rgb(50, 60, 120);
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+
+      a {
+        color: rgb(100, 120, 250);
+        font-weight: 500;
+
+        &:hover {
+          color: rgb(60, 90, 200);
+        }
+      }
+    }
+  }
+
   @media (max-width: 768px) {
     .about-container {
       flex-direction: column-reverse;
       text-align: center;
+    }
+
+    .about-site {
+      text-align: center;
+      padding: 1.5rem;
     }
   }
 }
