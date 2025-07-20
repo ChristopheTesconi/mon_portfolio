@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import "../../../styles/contact/contact.scss";
+import frTexts from "../../../translate/contact/contactfr.json";
+import enTexts from "../../../translate/contact/contacten.json";
 
 export default function Contact() {
-  // State du formulaire
+  const currentLocale = window.location.pathname.split("/")[1] || "fr";
+  const texts = currentLocale === "en" ? enTexts : frTexts;
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
 
-  // Gère la mise à jour des champs
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Gère la soumission du formulaire
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -26,30 +28,27 @@ export default function Contact() {
       });
 
       if (response.ok) {
-        alert("Merci ! Votre message a été envoyé.");
+        alert(texts.success);
         setFormData({ name: "", email: "", message: "" });
       } else {
         const data = await response.json();
-        alert("Erreur : " + (data.error || "Merci de réessayer."));
+        alert(texts.error + (data.error ? ` (${data.error})` : ""));
       }
     } catch (error) {
-      alert("Erreur réseau, merci de réessayer plus tard.");
+      alert(texts.networkError);
     }
   };
 
   return (
     <section id="contact" className="contact">
       <div className="contact-content">
-        <h2>Contactez-moi</h2>
-        <p>
-          Un projet, une idée, ou juste une question ? Remplissez le formulaire
-          ci-dessous, et je vous répondrai rapidement.
-        </p>
+        <h2>{texts.title}</h2>
+        <p>{texts.intro}</p>
         <form className="contact-form" onSubmit={handleSubmit}>
           <input
             type="text"
             name="name"
-            placeholder="Votre nom"
+            placeholder={texts.placeholderName}
             value={formData.name}
             onChange={handleChange}
             required
@@ -57,21 +56,21 @@ export default function Contact() {
           <input
             type="email"
             name="email"
-            placeholder="Votre email"
+            placeholder={texts.placeholderEmail}
             value={formData.email}
             onChange={handleChange}
             required
           />
           <textarea
             name="message"
-            placeholder="Votre message"
+            placeholder={texts.placeholderMessage}
             rows="5"
             value={formData.message}
             onChange={handleChange}
             required
           ></textarea>
           <button type="submit" className="cta">
-            Envoyer
+            {texts.submit}
           </button>
         </form>
       </div>

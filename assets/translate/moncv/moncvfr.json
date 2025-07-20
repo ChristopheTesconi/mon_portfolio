@@ -1,0 +1,19 @@
+{
+  "title": "Mon CV",
+  "skills": [
+    {
+      "title": "Back-end",
+      "description": "PHP, Symfony, MySQL, Doctrine, API REST"
+    },
+    {
+      "title": "Front-end",
+      "description": "React, Laravel, JavaScript, TypeScript, HTML/CSS"
+    },
+    {
+      "title": "Outils",
+      "description": "Git/GitHub, Composer, PhpMyAdmin, Vite.js, WordPress"
+    }
+  ],
+  "description": "Développeur web fullstack (Symfony, React, PHP, JavaScript), je me suis reconverti après 20 ans dans la restauration pour créer des solutions modernes et performantes.\nJe développe des sites vitrines, applications métier et API, en aidant mes clients à gagner en visibilité et productivité.",
+  "downloadText": "Télécharger mon CV (PDF)"
+}

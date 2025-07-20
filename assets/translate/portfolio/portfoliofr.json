@@ -1,0 +1,23 @@
+{
+  "titleFreelance": "Tesconi Christophe Développeur Fullstack",
+  "introText": "Besoin d’un site ou d’un outil interne qui travaille pour vous ? Je développe des solutions web robustes qui vous rendent visible, automatisent vos tâches et vous font gagner du temps au quotidien.",
+  "contactCTA": "Un projet ? Écrivez-moi",
+  "projectsTitle": "Mes projets",
+  "projects": [
+    {
+      "titre": "Bicolor",
+      "description": "Site fullstack (PHP, MySQL) avec interface utilisateur simple et gestion de contenu.",
+      "githubCTA": "Voir sur GitHub"
+    },
+    {
+      "titre": "Origami",
+      "description": "Réseau social avec authentification et back-office admin (Symfony + React).",
+      "githubCTA": "Voir sur GitHub"
+    },
+    {
+      "titre": "O’flix",
+      "description": "Plateforme façon Netflix développée en Laravel avec MySQL (travail d’équipe en Agile).",
+      "githubCTA": "Voir sur GitHub"
+    }
+  ]
+}

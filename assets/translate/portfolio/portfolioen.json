@@ -1,0 +1,23 @@
+{
+  "titleFreelance": "Christophe Tesconi Fullstack Developer",
+  "introText": "Need a website or internal tool that works for you? I build robust web solutions that boost your visibility, automate your tasks, and save you time every day.",
+  "contactCTA": "Have a project? Write to me",
+  "projectsTitle": "My projects",
+  "projects": [
+    {
+      "titre": "Bicolor",
+      "description": "Fullstack site (PHP, MySQL) with a simple user interface and content management.",
+      "githubCTA": "View on GitHub"
+    },
+    {
+      "titre": "Origami",
+      "description": "Social network with authentication and admin back-office (Symfony + React).",
+      "githubCTA": "View on GitHub"
+    },
+    {
+      "titre": "O’flix",
+      "description": "Netflix-style platform developed in Laravel with MySQL (teamwork Agile).",
+      "githubCTA": "View on GitHub"
+    }
+  ]
+}

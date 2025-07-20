@@ -5,43 +5,46 @@ import projet1 from "../../images/portfolio/bicolor.jpg";
 import projet2 from "../../images/portfolio/origamis.png";
 import projet3 from "../../images/portfolio/oflix.png";
 
+import frTexts from "../../translate/portfolio/portfoliofr.json";
+import enTexts from "../../translate/portfolio/portfolioen.json";
+
 export default function Portfolio() {
+  const currentLocale = window.location.pathname.split("/")[1] || "fr";
+  const texts = currentLocale === "en" ? enTexts : frTexts;
+
   const projets = [
     {
-      titre: "Bicolor",
-      description:
-        "Site fullstack (PHP, MySQL) avec interface utilisateur simple et gestion de contenu.",
+      titre: texts.projects[0].titre,
+      description: texts.projects[0].description,
       image: projet1,
       github: "https://github.com/ChristopheTesconi/Bicolor2",
+      githubCTA: texts.projects[0].githubCTA,
     },
     {
-      titre: "Origami",
-      description:
-        "Réseau social avec authentification et back-office admin (Symfony + React).",
+      titre: texts.projects[1].titre,
+      description: texts.projects[1].description,
       image: projet2,
       github: "https://github.com/ChristopheTesconi/origami",
+      githubCTA: texts.projects[1].githubCTA,
     },
     {
-      titre: "O’flix",
-      description:
-        "Plateforme façon Netflix développée en Laravel avec MySQL (travail d’équipe en Agile).",
+      titre: texts.projects[2].titre,
+      description: texts.projects[2].description,
       image: projet3,
       github: "https://github.com/ChristopheTesconi",
+      githubCTA: texts.projects[2].githubCTA,
     },
   ];
+
   return (
     <>
       <section className="portfolio freelance">
         <div className="freelance-content">
           <div className="freelance-text">
-            <h2>Tesconi Christophe Développeur Fullstack</h2>
-            <p>
-              Besoin d’un site ou d’un outil interne qui travaille pour vous ?
-              Je développe des solutions web robustes qui vous rendent visible,
-              automatisent vos tâches et vous font gagner du temps au quotidien.
-            </p>
-            <a href="/contact" className="cta">
-              Un projet ? Écrivez-moi
+            <h2>{texts.titleFreelance}</h2>
+            <p>{texts.introText}</p>
+            <a href={`/${currentLocale}/contact`} className="cta">
+              {texts.contactCTA}
             </a>
           </div>
           <div className="freelance-photo">
@@ -49,8 +52,9 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
+
       <section id="mesprojets" className="portfolio projets">
-        <h2>Mes projets</h2>
+        <h2>{texts.projectsTitle}</h2>
         <div className="projets-grid">
           {projets.map((projet, index) => (
             <div className="projet-card" key={index}>
@@ -63,7 +67,7 @@ export default function Portfolio() {
                 rel="noopener noreferrer"
                 className="cta"
               >
-                Voir sur GitHub
+                {projet.githubCTA}
               </a>
             </div>
           ))}

@@ -13,53 +13,53 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 final class PortfolioController extends AbstractController
 {
-    #[Route('/', name: 'app_portfolio')]
-    public function index(): Response
+
+#[Route('/', name: 'homepage_redirect')]
+    public function homepageRedirect(): Response
     {
-        return $this->render('portfolio/indexportfolio.html.twig', [
-            'controller_name' => 'PortfolioController',
-        ]);
+        // On ne fait rien ici car le LocaleListener s’en charge
+        return new Response(); 
     }
 
-    #[Route('/mentions-legales', name: 'app_mentions-legales')]
-    public function mentionslegales(): Response
-    {
-        return $this->render('portfolio/mentionslegales.html.twig', [
-            'controller_name' => 'PortfolioController',
-        ]);
-    }
+#[Route('/{_locale}', name: 'app_portfolio', requirements: ['_locale' => 'fr|en'])]
+public function index(): Response
+{
+    return $this->render('portfolio/indexportfolio.html.twig');
+}
 
-    #[Route('/contact', name: 'app_contact')]
-    public function contact(): Response
-    {
-        return $this->render('portfolio/contact.html.twig', [
-            'controller_name' => 'PortfolioController',
-        ]);
-    }
 
-    #[Route('/messervices', name: 'app_messervices')]
-    public function messervices(): Response
-    {
-        return $this->render('portfolio/messervices.html.twig', [
-            'controller_name' => 'PortfolioController',
-        ]);
-    }
+#[Route('/{_locale}/mentions-legales', name: 'app_mentions_legales', requirements: ['_locale' => 'fr|en'])]
+public function mentionsLegales(): Response
+{
+    return $this->render('portfolio/mentionslegales.html.twig');
+}
 
-    #[Route('/apropos', name: 'app_apropos')]
-    public function apropos(): Response
-    {
-        return $this->render('portfolio/apropos.html.twig', [
-            'controller_name' => 'PortfolioController',
-        ]);
-    }
 
-    #[Route('/moncv', name: 'app_moncv')]
-    public function moncv(): Response
-    {
-        return $this->render('portfolio/moncv.html.twig', [
-            'controller_name' => 'PortfolioController',
-        ]);
-    }
+
+#[Route('/{_locale}/contact', name: 'app_contact', requirements: ['_locale' => 'fr|en'])]
+public function contact(): Response
+{
+    return $this->render('portfolio/contact.html.twig');
+}
+
+#[Route('/{_locale}/messervices', name: 'app_messervices', requirements: ['_locale' => 'fr|en'])]
+public function messervices(): Response
+{
+    return $this->render('portfolio/messervices.html.twig');
+}
+
+#[Route('/{_locale}/apropos', name: 'app_apropos', requirements: ['_locale' => 'fr|en'])]
+public function apropos(): Response
+{
+    return $this->render('portfolio/apropos.html.twig');
+}
+
+#[Route('/{_locale}/moncv', name: 'app_moncv', requirements: ['_locale' => 'fr|en'])]
+public function moncv(): Response
+{
+    return $this->render('portfolio/moncv.html.twig');
+}
+
 
     #[Route('/contact/send', name: 'contact_send', methods: ['POST'])]
     public function send(Request $request, MailerInterface $mailer): JsonResponse
@@ -91,5 +91,4 @@ final class PortfolioController extends AbstractController
             return new JsonResponse(['error' => 'Erreur lors de l\'envoi du mail'], 500);
         }
     }
-
 }

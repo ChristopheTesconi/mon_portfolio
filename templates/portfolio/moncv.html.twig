@@ -4,7 +4,13 @@
     {{ parent() }}
 {% endblock %}
 
-{% block title %}Mon CV{% endblock %}
+{% block title %}
+    {% if app.request.locale == 'fr' %}
+        Mon CV
+    {% else %}
+        My CV
+    {% endif %}
+{% endblock %}
 
 {% block body %}
     <div id="id-moncv"></div>

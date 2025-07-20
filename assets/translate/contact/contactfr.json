@@ -1,0 +1,11 @@
+{
+  "title": "Contactez-moi",
+  "intro": "Un projet, une idée, ou juste une question ? Remplissez le formulaire ci-dessous, et je vous répondrai rapidement.",
+  "placeholderName": "Votre nom",
+  "placeholderEmail": "Votre email",
+  "placeholderMessage": "Votre message",
+  "submit": "Envoyer",
+  "success": "Merci ! Votre message a été envoyé.",
+  "error": "Erreur : Merci de réessayer.",
+  "networkError": "Erreur réseau, merci de réessayer plus tard."
+}

@@ -4,7 +4,13 @@
 	{{parent()}}
 {% endblock %}
 
-{% block title %}Mes Services{% endblock %}
+{% block title %}
+    {% if app.request.locale == 'fr' %}
+        Mes Services
+    {% else %}
+        My Services
+    {% endif %}
+{% endblock %}
 
 {% block body %}
 	<div id="id-messervices"></div>

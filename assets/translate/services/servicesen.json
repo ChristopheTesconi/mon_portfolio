@@ -1,0 +1,17 @@
+{
+  "title": "What I Offer You",
+  "services": [
+    {
+      "title": "Showcase & e-commerce websites",
+      "description": "Attract more customers with a modern, fast, and optimized website. Whether you need a showcase site or an online store, I build sites that convert and strengthen your brand."
+    },
+    {
+      "title": "Custom applications & tools",
+      "description": "Save time and simplify your processes with tailor-made tools: internal management, CRM, dashboards, or other web apps adapted to your business."
+    },
+    {
+      "title": "Automation & integrations",
+      "description": "Free yourself from repetitive tasks: connect your services (API, CRM, ERP) and automate workflows to work more efficiently."
+    }
+  ]
+}

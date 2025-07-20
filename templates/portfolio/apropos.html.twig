@@ -4,7 +4,14 @@
     {{ parent() }}
 {% endblock %}
 
-{% block title %}À propos{% endblock %}
+{% block title %}
+    {% if app.request.locale == 'fr' %}
+        À propos
+    {% else %}
+        About me
+    {% endif %}
+{% endblock %}
+
 
 {% block body %}
     <div id="id-apropos"></div>

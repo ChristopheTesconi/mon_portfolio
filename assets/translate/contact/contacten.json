@@ -1,0 +1,11 @@
+{
+  "title": "Contact Me",
+  "intro": "Got a project, an idea, or just a question? Fill out the form below, and I’ll get back to you quickly.",
+  "placeholderName": "Your name",
+  "placeholderEmail": "Your email",
+  "placeholderMessage": "Your message",
+  "submit": "Send",
+  "success": "Thank you! Your message has been sent.",
+  "error": "Error: Please try again.",
+  "networkError": "Network error, please try again later."
+}

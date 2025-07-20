@@ -55,6 +55,13 @@
       border-radius: 0.5rem;
       object-fit: cover;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: 0 8px 24px rgba(165, 180, 252, 0.3);
+      }
     }
   }
 
