@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/portfolio/portfolio.scss";
-import christophe from "../../images/portfolio/christophe.jpg";
+import christophe from "../../images/portfolio/Christophe CV.jpeg";
 import projet1 from "../../images/portfolio/bicolor.jpg";
 import projet2 from "../../images/portfolio/origamis.png";
 import projet3 from "../../images/portfolio/oflix.png";

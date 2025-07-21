@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../styles/portfolio/apropos.scss";
-import christophe from "../../../images/portfolio/christophe.jpg";
+import christophe from "../../../images/portfolio/Christophe CV.jpeg";
 import frTexts from "../../../translate/apropos/aproposfr.json";
 import enTexts from "../../../translate/apropos/aproposen.json";
 
