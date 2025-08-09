@@ -1,6 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .services {
   background-color: #f8f9fa;
-  padding: 15vh 5vw;
+  padding: calc(5vh + 80px) 5vw 5vh;
   text-align: center;
   min-height: 85vh;
 

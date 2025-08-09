@@ -19,7 +19,6 @@
       color: rgb(165, 180, 252) !important;
     }
   }
-
 }
 
 .navbar-collapse.show {
@@ -34,5 +33,23 @@
     &:hover {
       color: rgb(165, 180, 252) !important;
     }
+  }
+}
+.language-switcher {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  z-index: 999;
+
+  .globe-icon {
+    cursor: pointer;
+  }
+
+  @media (max-width: 991.98px) {
+    position: static;
+    margin-left: auto;
+    margin-right: 1rem;
+    top: unset;
+    right: unset;
   }
 }

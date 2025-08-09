@@ -8,7 +8,7 @@ export default function Services() {
   const texts = currentLocale === "en" ? enTexts : frTexts;
 
   return (
-    <section id="services" className="services">
+    <section id="messervices" className="services">
       <div className="services-content">
         <h2>{texts.title}</h2>
         <div className="services-grid">

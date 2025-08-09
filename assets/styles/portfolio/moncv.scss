@@ -1,7 +1,7 @@
 .moncv {
   background-color: rgb(31, 32, 57);
   color: white;
-  padding: 5vh 5vw;
+  padding: calc(5vh + 80px) 5vw 5vh;
   text-align: center;
   min-height: 100vh;
   padding-top: 150px;
@@ -17,6 +17,7 @@
     margin: 0 auto 3rem;
     font-size: 1.2rem;
     line-height: 1.6;
+    text-align: justify;
   }
 
   .skills {

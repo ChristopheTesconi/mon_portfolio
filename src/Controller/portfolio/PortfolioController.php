@@ -34,61 +34,32 @@ public function mentionsLegales(): Response
     return $this->render('portfolio/mentionslegales.html.twig');
 }
 
-
-
-#[Route('/{_locale}/contact', name: 'app_contact', requirements: ['_locale' => 'fr|en'])]
-public function contact(): Response
+#[Route('/contact/send', name: 'contact_send', methods: ['POST'])]
+public function send(Request $request, MailerInterface $mailer): JsonResponse
 {
-    return $this->render('portfolio/contact.html.twig');
-}
+    $data = json_decode($request->getContent(), true);
 
-#[Route('/{_locale}/messervices', name: 'app_messervices', requirements: ['_locale' => 'fr|en'])]
-public function messervices(): Response
-{
-    return $this->render('portfolio/messervices.html.twig');
-}
-
-#[Route('/{_locale}/apropos', name: 'app_apropos', requirements: ['_locale' => 'fr|en'])]
-public function apropos(): Response
-{
-    return $this->render('portfolio/apropos.html.twig');
-}
-
-#[Route('/{_locale}/moncv', name: 'app_moncv', requirements: ['_locale' => 'fr|en'])]
-public function moncv(): Response
-{
-    return $this->render('portfolio/moncv.html.twig');
-}
-
-
-    #[Route('/contact/send', name: 'contact_send', methods: ['POST'])]
-    public function send(Request $request, MailerInterface $mailer): JsonResponse
-    {
-        $data = json_decode($request->getContent(), true);
-
-        // Validation simple
-        if (!isset($data['name'], $data['email'], $data['message'])) {
-            return new JsonResponse(['error' => 'Champs manquants'], 400);
-        }
-
-        // Tu peux ajouter ici une validation plus poussée si besoin
-
-        // Préparation du mail
-        $email = (new Email())
-            ->from($data['email'])
-            ->to('chris.tesconi@gmail.com') 
-            ->subject('Nouveau message depuis le portfolio')
-            ->text(
-                "Nom : {$data['name']}\n".
-                "Email : {$data['email']}\n".
-                "Message :\n{$data['message']}"
-            );
-
-        try {
-            $mailer->send($email);
-            return new JsonResponse(['success' => true]);
-        } catch (Exception $e) {
-            return new JsonResponse(['error' => 'Erreur lors de l\'envoi du mail'], 500);
-        }
+    // Validation simple
+    if (!isset($data['name'], $data['email'], $data['message'])) {
+        return new JsonResponse(['error' => 'Champs manquants'], 400);
     }
+
+    // Préparation du mail
+    $email = (new Email())
+        ->from($data['email'])
+        ->to('chris.tesconi@gmail.com') 
+        ->subject('Nouveau message depuis le portfolio')
+        ->text(
+            "Nom : {$data['name']}\n".
+            "Email : {$data['email']}\n".
+            "Message :\n{$data['message']}"
+        );
+
+    try {
+        $mailer->send($email);
+        return new JsonResponse(['success' => true]);
+    } catch (Exception $e) {
+        return new JsonResponse(['error' => 'Erreur lors de l\'envoi du mail'], 500);
+    }
+}
 }

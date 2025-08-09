@@ -1,10 +1,18 @@
+// #contact {
+//   scroll-margin-top: 30px;
+
+//   @media (max-width: 768px) {
+//     scroll-margin-top: 300px;
+//   }
+// }
+
 .contact {
   background-color: rgb(31, 32, 57);
-  padding: 10vh 5vw;
+  padding: calc(5vh + 80px) 5vw 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 85vh;
 
   .contact-content {
     max-width: 600px;

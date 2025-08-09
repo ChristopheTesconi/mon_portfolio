@@ -1,0 +1,160 @@
+{
+  "_Christophe CV-CWlAOqAi.js": {
+    "file": "assets/Christophe CV-CWlAOqAi.js",
+    "name": "Christophe CV",
+    "assets": [
+      "assets/Christophe CV-Bw7L8ar5.jpeg"
+    ]
+  },
+  "_client-CpjWHQC7.js": {
+    "file": "assets/client-CpjWHQC7.js",
+    "name": "client"
+  },
+  "assets/app.jsx": {
+    "file": "assets/app-BHLe-lKl.js",
+    "name": "app",
+    "src": "assets/app.jsx",
+    "isEntry": true,
+    "css": [
+      "assets/app-NpmA5kap.css"
+    ]
+  },
+  "assets/components/footer/indexfooter.jsx": {
+    "file": "assets/footer-BfGYd0L8.js",
+    "name": "footer",
+    "src": "assets/components/footer/indexfooter.jsx",
+    "isEntry": true,
+    "imports": [
+      "_client-CpjWHQC7.js"
+    ],
+    "css": [
+      "assets/footer-fWMNU5mu.css"
+    ]
+  },
+  "assets/components/mentionslegales/indexmentionslegales.jsx": {
+    "file": "assets/mentionslegales-CgTrwd0A.js",
+    "name": "mentionslegales",
+    "src": "assets/components/mentionslegales/indexmentionslegales.jsx",
+    "isEntry": true,
+    "imports": [
+      "_client-CpjWHQC7.js"
+    ],
+    "css": [
+      "assets/mentionslegales-B5sSi_sY.css"
+    ]
+  },
+  "assets/components/navbar/indexnavbar.jsx": {
+    "file": "assets/navbar-7-w2aYyh.js",
+    "name": "navbar",
+    "src": "assets/components/navbar/indexnavbar.jsx",
+    "isEntry": true,
+    "imports": [
+      "_client-CpjWHQC7.js"
+    ],
+    "css": [
+      "assets/navbar-CPifytMR.css"
+    ],
+    "assets": [
+      "assets/monlogo-5wOE9CmF.png"
+    ]
+  },
+  "assets/components/portfolio/apropos/indexapropos.jsx": {
+    "file": "assets/apropos-Biw2x3jS.js",
+    "name": "apropos",
+    "src": "assets/components/portfolio/apropos/indexapropos.jsx",
+    "isEntry": true,
+    "imports": [
+      "_client-CpjWHQC7.js",
+      "_Christophe CV-CWlAOqAi.js"
+    ],
+    "css": [
+      "assets/apropos-9svxku97.css"
+    ]
+  },
+  "assets/components/portfolio/contact/indexcontact.jsx": {
+    "file": "assets/contact-DBvY6mn7.js",
+    "name": "contact",
+    "src": "assets/components/portfolio/contact/indexcontact.jsx",
+    "isEntry": true,
+    "imports": [
+      "_client-CpjWHQC7.js"
+    ],
+    "css": [
+      "assets/contact-CJJ5gMZt.css"
+    ]
+  },
+  "assets/components/portfolio/indexportfolio.jsx": {
+    "file": "assets/portfolio-Bv_DflP2.js",
+    "name": "portfolio",
+    "src": "assets/components/portfolio/indexportfolio.jsx",
+    "isEntry": true,
+    "imports": [
+      "_client-CpjWHQC7.js",
+      "_Christophe CV-CWlAOqAi.js"
+    ],
+    "css": [
+      "assets/portfolio-CmLAnC9v.css"
+    ],
+    "assets": [
+      "assets/bicolor-CGGGaFLl.jpg",
+      "assets/origamis-BY-9jFcs.png",
+      "assets/oflix-B80jWfGj.png"
+    ]
+  },
+  "assets/components/portfolio/mesServices/indexmesservices.jsx": {
+    "file": "assets/messervices-BuFkI1uT.js",
+    "name": "messervices",
+    "src": "assets/components/portfolio/mesServices/indexmesservices.jsx",
+    "isEntry": true,
+    "imports": [
+      "_client-CpjWHQC7.js"
+    ],
+    "css": [
+      "assets/messervices-C4CF0U8x.css"
+    ]
+  },
+  "assets/components/portfolio/moncv/indexmoncv.jsx": {
+    "file": "assets/moncv-BpRGULl1.js",
+    "name": "moncv",
+    "src": "assets/components/portfolio/moncv/indexmoncv.jsx",
+    "isEntry": true,
+    "imports": [
+      "_client-CpjWHQC7.js"
+    ],
+    "css": [
+      "assets/moncv-Bze6CiBr.css"
+    ],
+    "assets": [
+      "assets/CV-Christophe-Tesconi-FR-BAbqa5Ad.pdf",
+      "assets/CV-Christophe-Tesconi-EN-BE8iymwS.pdf"
+    ]
+  },
+  "assets/images/fichiers/CV-Christophe-Tesconi-EN.pdf": {
+    "file": "assets/CV-Christophe-Tesconi-EN-BE8iymwS.pdf",
+    "src": "assets/images/fichiers/CV-Christophe-Tesconi-EN.pdf"
+  },
+  "assets/images/fichiers/CV-Christophe-Tesconi-FR.pdf": {
+    "file": "assets/CV-Christophe-Tesconi-FR-BAbqa5Ad.pdf",
+    "src": "assets/images/fichiers/CV-Christophe-Tesconi-FR.pdf"
+  },
+  "assets/images/portfolio/Christophe CV.jpeg": {
+    "file": "assets/Christophe CV-Bw7L8ar5.jpeg",
+    "src": "assets/images/portfolio/Christophe CV.jpeg"
+  },
+  "assets/images/portfolio/bicolor.jpg": {
+    "file": "assets/bicolor-CGGGaFLl.jpg",
+    "src": "assets/images/portfolio/bicolor.jpg"
+  },
+  "assets/images/portfolio/monlogo.png": {
+    "file": "assets/monlogo-5wOE9CmF.png",
+    "src": "assets/images/portfolio/monlogo.png"
+  },
+  "assets/images/portfolio/oflix.png": {
+    "file": "assets/oflix-B80jWfGj.png",
+    "src": "assets/images/portfolio/oflix.png"
+  },
+  "assets/images/portfolio/origamis.png": {
+    "file": "assets/origamis-BY-9jFcs.png",
+    "src": "assets/images/portfolio/origamis.png"
+  }
+}

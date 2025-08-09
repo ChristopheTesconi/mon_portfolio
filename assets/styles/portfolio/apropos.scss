@@ -1,6 +1,5 @@
 html {
-  // Corrige le scroll automatique vers les sections avec des ancres
-  scroll-padding-top: 80px; // adapte si ta navbar est plus haute
+  scroll-behavior: smooth;
 }
 
 .about {

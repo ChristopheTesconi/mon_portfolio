@@ -3,24 +3,22 @@ import symfonyPlugin from "vite-plugin-symfony";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
+  base: "/build/",
   plugins: [react(), symfonyPlugin()],
   build: {
+    outDir: "public/build",
+    manifest: true,
     rollupOptions: {
       input: {
         app: "./assets/app.jsx",
-        //Composants
+        // Composants
         navbar: "./assets/components/navbar/indexnavbar.jsx",
         footer: "./assets/components/footer/indexfooter.jsx",
         mentionslegales:
           "./assets/components/mentionslegales/indexmentionslegales.jsx",
 
-        //Portfolio
+        // Portfolio
         portfolio: "./assets/components/portfolio/indexportfolio.jsx",
-        contact: "./assets/components/portfolio/contact/indexcontact.jsx",
-        messervices:
-          "./assets/components/portfolio/mesServices/indexmesservices.jsx",
-        apropos: "./assets/components/portfolio/apropos/indexapropos.jsx",
-        moncv: "./assets/components/portfolio/moncv/indexmoncv.jsx",
       },
     },
   },

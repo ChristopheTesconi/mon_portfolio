@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FaGlobe } from "react-icons/fa";
 import "../../styles/navbarfooter/navbar.scss";
 import monlogo from "../../images/portfolio/monlogo.png";
@@ -12,8 +12,10 @@ export default function Navbar() {
     window.location.pathname === "/";
 
   const [texts, setTexts] = useState(frTexts);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
-  // Charger les traductions selon la locale
   useEffect(() => {
     if (currentLocale === "en") {
       setTexts(enTexts);
@@ -22,13 +24,10 @@ export default function Navbar() {
     }
   }, [currentLocale]);
 
-  // Gérer le changement de langue (rester sur la même page)
   const switchLanguage = (lang) => {
     const newPath = window.location.pathname.replace(/^\/(fr|en)/, `/${lang}`);
     window.location.href = newPath;
   };
-
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
 
   useEffect(() => {
     function handleResize() {
@@ -38,98 +37,157 @@ export default function Navbar() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // 🔹 Fermer le menu si clic à l'extérieur
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    }
+    if (isMenuOpen) {
+      document.addEventListener("click", handleClickOutside);
+    } else {
+      document.removeEventListener("click", handleClickOutside);
+    }
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [isMenuOpen]);
+
+  // 🔹 Fermer le menu après clic sur un lien
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <nav className="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+    <nav
+      className="navbar navbar-expand-lg fixed-top bg-body-tertiary"
+      ref={menuRef}
+    >
       <div className="container-fluid">
-        <a className="navbar-brand" href={`/${currentLocale}`}>
+        {/* LOGO */}
+        <a
+          className="navbar-brand"
+          href={`/${currentLocale}#accueil`}
+          onClick={handleLinkClick}
+        >
           <img src={monlogo} alt="monlogo" />
         </a>
+
+        {/* 🌍 GLOBE ICON */}
+        <div className="language-switcher dropdown">
+          <a
+            className="nav-link dropdown-toggle globe-icon"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <FaGlobe size={24} />
+          </a>
+          <div
+            className="dropdown-menu dropdown-menu-end"
+            style={{
+              width: "140px",
+              minWidth: "auto",
+              padding: "0.25rem 0",
+              whiteSpace: "nowrap",
+            }}
+          >
+            <button
+              className="dropdown-item"
+              onClick={() => switchLanguage("fr")}
+            >
+              🇫🇷 {texts.french}
+            </button>
+            <button
+              className="dropdown-item"
+              onClick={() => switchLanguage("en")}
+            >
+              🇬🇧 {texts.english}
+            </button>
+          </div>
+        </div>
+
+        {/* BOUTON BURGER */}
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarColor01"
-          aria-controls="navbarColor01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarColor01">
+
+        {/* LIENS NAVBAR */}
+        <div
+          className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
+          id="navbarColor01"
+        >
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <a className="nav-link" href={`/${currentLocale}`}>
+              <a
+                className="nav-link"
+                href={`/${currentLocale}#accueil`}
+                onClick={handleLinkClick}
+              >
                 {texts.home}
               </a>
             </li>
             <li className="nav-item">
               {isHomePage ? (
-                <a className="nav-link" href="#mesprojets">
+                <a
+                  className="nav-link"
+                  href="#mesprojets"
+                  onClick={handleLinkClick}
+                >
                   {texts.projects}
                 </a>
               ) : (
-                <a className="nav-link" href={`/${currentLocale}#mesprojets`}>
+                <a
+                  className="nav-link"
+                  href={`/${currentLocale}#mesprojets`}
+                  onClick={handleLinkClick}
+                >
                   {texts.projects}
                 </a>
               )}
             </li>
             <li className="nav-item">
-              <a className="nav-link" href={`/${currentLocale}/messervices`}>
+              <a
+                className="nav-link"
+                href={`/${currentLocale}#messervices`}
+                onClick={handleLinkClick}
+              >
                 {texts.services}
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href={`/${currentLocale}/moncv`}>
+            {/* <li className="nav-item">
+              <a
+                className="nav-link"
+                href={`/${currentLocale}/moncv`}
+                onClick={handleLinkClick}
+              >
                 {texts.cv}
               </a>
-            </li>
+            </li> */}
             <li className="nav-item">
-              <a className="nav-link" href={`/${currentLocale}/apropos`}>
+              <a
+                className="nav-link"
+                href={`/${currentLocale}#about`}
+                onClick={handleLinkClick}
+              >
                 {texts.about}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href={`/${currentLocale}/contact`}>
+              <a
+                className="nav-link"
+                href={`/${currentLocale}#contact`}
+                onClick={handleLinkClick}
+              >
                 {texts.contact}
               </a>
             </li>
           </ul>
-          <li className="d-flex nav-item dropdown">
-            <a
-              className="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              href="#"
-              role="button"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <FaGlobe size={24} />
-            </a>
-            <div
-              className="dropdown-menu"
-              style={{
-                width: "140px",
-                minWidth: "auto",
-                padding: "0.25rem 0",
-                whiteSpace: "nowrap",
-                right: isMobile ? "auto" : 0,
-                left: isMobile ? 0 : "auto",
-              }}
-            >
-              <button
-                className="dropdown-item"
-                onClick={() => switchLanguage("fr")}
-              >
-                🇫🇷 {texts.french}
-              </button>
-              <button
-                className="dropdown-item"
-                onClick={() => switchLanguage("en")}
-              >
-                🇬🇧 {texts.english}
-              </button>
-            </div>
-          </li>
         </div>
       </div>
     </nav>
