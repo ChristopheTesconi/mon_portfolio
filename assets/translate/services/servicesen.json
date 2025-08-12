@@ -1,17 +1,29 @@
 {
-  "title": "What I Offer You",
+  "title": "What I Bring to You",
   "services": [
     {
-      "title": "Showcase & e-commerce websites",
-      "description": "Attract more customers with a modern, fast, and optimized website. Whether you need a showcase site or an online store, I build sites that convert and strengthen your brand."
+      "title": "Showcase & E-commerce Websites",
+      "description": [
+        "A modern and fast website to attract your customers",
+        "Showcase or online store, I build effective sites",
+        "Strengthen your image with a polished design"
+      ]
     },
     {
-      "title": "Custom applications & tools",
-      "description": "Save time and simplify your processes with tailor-made tools: internal management, CRM, dashboards, or other web apps adapted to your business."
+      "title": "Business Applications & Tools",
+      "description": [
+        "Save time with tools made for you",
+        "Internal management, CRM or tailored dashboards",
+        "Simplify your daily tasks"
+      ]
     },
     {
-      "title": "Automation & integrations",
-      "description": "Free yourself from repetitive tasks: connect your services (API, CRM, ERP) and automate workflows to work more efficiently."
+      "title": "Automation & Integrations",
+      "description": [
+        "Automate your repetitive tasks",
+        "Connect your services for better workflows",
+        "Work more efficiently with less effort"
+      ]
     }
   ]
 }

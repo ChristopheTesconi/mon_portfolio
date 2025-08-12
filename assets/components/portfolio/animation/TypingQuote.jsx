@@ -15,14 +15,14 @@ export default function TypingQuote({ text }) {
       setDisplayedText(text.slice(0, indexRef.current + 1));
       indexRef.current += 1;
       if (indexRef.current < text.length) {
-        timeoutIdRef.current = setTimeout(type, 100);
+        timeoutIdRef.current = setTimeout(type, 90);
       } else {
         // Quand le texte est fini, attendre 5 secondes puis recommencer
         restartTimeoutRef.current = setTimeout(() => {
           indexRef.current = 0;
           setDisplayedText("");
           type();
-        }, 5000);
+        }, 7000);
       }
     }
 

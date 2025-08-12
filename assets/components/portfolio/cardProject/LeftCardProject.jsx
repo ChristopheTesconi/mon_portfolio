@@ -7,6 +7,7 @@ export default function LeftCardProject({
   image,
   github,
   githubCTA,
+  liveUrl
 }) {
   return (
     <div className="left-card-project project-card">
@@ -30,7 +31,18 @@ export default function LeftCardProject({
         >
           {githubCTA}
         </a>
+        {liveUrl && (
+          <a
+            href={liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta live-link"
+          >
+            Voir le site
+          </a>
+        )}
       </div>
+
       <div className="project-image-container">
         <img src={image} alt={titre} className="project-image" />
       </div>

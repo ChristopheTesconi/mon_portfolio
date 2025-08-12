@@ -15,7 +15,16 @@ export default function Services() {
           {texts.services.map((service, index) => (
             <div className="service-card" key={index}>
               <h3>{service.title}</h3>
-              <p>{service.description}</p>
+              {/* Gestion conditionnelle de la description */}
+              {Array.isArray(service.description) ? (
+                <ul>
+                  {service.description.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p>{service.description}</p>
+              )}
             </div>
           ))}
         </div>

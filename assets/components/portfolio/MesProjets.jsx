@@ -28,6 +28,7 @@ export default function MesProjets({ texts }) {
       image: projet2,
       github: "https://github.com/ChristopheTesconi/origami",
       githubCTA: texts.projects[2].githubCTA,
+      liveUrl: "https://lesorigamisdestephane.fr/",
     },
     {
       titre: texts.projects[3].titre,

@@ -3,15 +3,27 @@
   "services": [
     {
       "title": "Sites vitrines & e-commerce",
-      "description": "Attirez plus de clients avec un site moderne, rapide et optimisé. Que vous ayez besoin d’une vitrine ou d’une boutique en ligne, je construis des sites qui convertissent et renforcent votre image."
+      "description": [
+        "Un site moderne et rapide pour attirer vos clients",
+        "Vitrine ou boutique en ligne, je crée des sites efficaces",
+        "Renforcez votre image grâce à un design soigné"
+      ]
     },
     {
       "title": "Applications & outils métier",
-      "description": "Gagnez du temps et simplifiez vos process avec des outils sur-mesure : gestion interne, CRM, dashboard ou autre application web adaptée à votre activité."
+      "description": [
+        "Gagnez du temps avec des outils faits pour vous",
+        "Gestion interne, CRM ou tableau de bord adaptés",
+        "Simplifiez vos tâches quotidiennes"
+      ]
     },
     {
       "title": "Automatisation & intégrations",
-      "description": "Libérez-vous des tâches répétitives : connectez vos services (API, CRM, ERP) et automatisez vos workflows pour travailler plus efficacement."
+      "description": [
+        "Automatisez vos tâches répétitives",
+        "Connectez vos services pour un meilleur flux de travail",
+        "Travaillez plus efficacement sans effort"
+      ]
     }
   ]
 }

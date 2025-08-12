@@ -3,6 +3,7 @@
   "introQuote": "Chaque site est un lien précieux entre vous et vos utilisateurs.",
   "introText": "Je donne vie à vos idées digitales avec rigueur et passion, en plaçant vos besoins au cœur de chaque projet.\nFort d’un parcours unique, je vous accompagne avec transparence, engagement et authenticité.",
   "contactCTA": "Un projet ? Écrivez-moi",
+  "message": "Un site ne sert pas qu’à exister en ligne, c’est un véritable pont vers vos clients. Grâce à une expérience claire, simple et fluide, je vous aide à créer un lien fort et durable avec eux.",
   "projectsTitle": "Mes projets",
   "projects": [
     {
@@ -30,9 +31,9 @@
     {
       "titre": "Origami",
       "description": [
-        "Gestion simple du profil : photo, mot de passe et infos perso",
+        "Gestion sécurisée du profil : photo, mot de passe et infos perso",
         "Système de favoris pour retrouver ses modèles préférés",
-        "Recherche intégrée pour trouver un origami rapidement",
+        "Carousel d'image",
         "Site adaptable à tous les supports, avec éléments réutilisables",
         "Ajout et gestion de commentaires avec messages de confirmation"
       ],

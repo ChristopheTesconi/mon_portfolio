@@ -4,7 +4,9 @@ import MesProjets from "./MesProjets";
 import MesServices from "./MesServices";
 import Apropos from "./Apropos";
 import Contact from "./Contact";
+import Tarifs from "./Tarifs";
 import TypingQuote from "./animation/TypingQuote";
+import MessageLien from "./animation/MessageLien";
 import frTexts from "../../translate/portfolio/portfoliofr.json";
 import enTexts from "../../translate/portfolio/portfolioen.json";
 
@@ -37,9 +39,6 @@ export default function Portfolio() {
               {texts.contactCTA}
             </a>
           </div>
-          {/* <div className="freelance-photo">
-            <img src={christophe} alt="Christophe Tesconi" />
-          </div> */}
         </div>
       </section>
 
@@ -51,9 +50,12 @@ export default function Portfolio() {
 
       {/* A propos */}
       <Apropos />
-
+      <MessageLien texts={texts} />
       {/* Contact */}
       <Contact />
+
+      {/* Tarifs */}
+      <Tarifs />
     </>
   );
 }

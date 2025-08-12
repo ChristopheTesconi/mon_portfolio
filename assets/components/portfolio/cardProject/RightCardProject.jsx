@@ -7,6 +7,7 @@ export default function RightCardProject({
   image,
   github,
   githubCTA,
+  liveUrl,
 }) {
   return (
     <div className="right-card-project project-card">
@@ -33,6 +34,16 @@ export default function RightCardProject({
         >
           {githubCTA}
         </a>
+        {liveUrl && (
+          <a
+            href={liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="live-link"
+          >
+            lesorigamisdestephane.fr
+          </a>
+        )}
       </div>
     </div>
   );

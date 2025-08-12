@@ -1,0 +1,54 @@
+.tarifs {
+  background-color: white;
+  padding: 5vh 5vw;
+  display: flex;
+  justify-content: center;
+  min-height: auto; // pas forcément 90vh ici, laisse s’adapter au contenu
+  padding-top: 100px; // un peu moins que freelance, à ajuster
+
+  .tarifs-content {
+    max-width: 800px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: justify;
+
+    h2 {
+      font-size: 2.5rem;
+      color: rgb(50, 60, 120);
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      color: black;
+      margin: 0;
+
+      strong {
+        color: black;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 3vh 3vw;
+
+    .tarifs-content {
+      max-width: 100%;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  }
+}

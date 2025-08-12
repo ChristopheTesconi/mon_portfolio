@@ -173,6 +173,15 @@ export default function Navbar() {
                 {texts.contact}
               </a>
             </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href={anchorLink("tarifs")}
+                onClick={handleLinkClick}
+              >
+                {texts.pricing}
+              </a>
+            </li>
           </ul>
 
           {/* BOUTON LANGUE en desktop, tout à droite */}

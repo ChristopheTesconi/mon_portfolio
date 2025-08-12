@@ -45,6 +45,7 @@
       font-weight: bold;
       text-decoration: none;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin: 10px;
 
       &:hover {
         transform: translateY(-5px) scale(1.03);
@@ -70,6 +71,10 @@
     .project-text {
       padding-left: 0;
       text-align: center;
+
+      .cta {
+        margin: 20px 20px;
+      }
     }
 
     .project-image-container {

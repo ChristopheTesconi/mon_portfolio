@@ -97,3 +97,20 @@ html {
     }
   }
 }
+
+.message-lien {
+  background-color: rgb(31, 32, 57);
+  width: 100%;
+  margin: 0 auto;
+  padding: calc(5vh + 80px) 5vw 5vh;
+  color: #a5b4fc;
+  font-size: 1.7rem;
+  line-height: 1.6;
+  text-align: center;
+
+  p.intro-quote {
+    margin-bottom: 0 0 1.5rem 0;
+    font-style: italic;
+    font-weight: 500;
+  }
+}
