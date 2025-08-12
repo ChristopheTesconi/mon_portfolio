@@ -21,11 +21,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-links">
-        <a
-          href={`/${currentLocale}/contact`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={`/${currentLocale}#contact`} rel="noopener noreferrer">
           {texts.contact}
         </a>
         <a href="mailto:chris.tesconi@gmail.com">{texts.email}</a>

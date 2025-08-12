@@ -7,6 +7,8 @@ import enTexts from "../../translate/navbar/navbaren.json";
 
 export default function Navbar() {
   const currentLocale = window.location.pathname.split("/")[1] || "fr";
+
+  // Vérifie si on est sur la home
   const isHomePage =
     window.location.pathname === `/${currentLocale}` ||
     window.location.pathname === "/";
@@ -15,16 +17,14 @@ export default function Navbar() {
 
   // Charger les traductions selon la locale
   useEffect(() => {
-    if (currentLocale === "en") {
-      setTexts(enTexts);
-    } else {
-      setTexts(frTexts);
-    }
+    setTexts(currentLocale === "en" ? enTexts : frTexts);
   }, [currentLocale]);
 
-  // Gérer le changement de langue (rester sur la même page)
+  // Changement de langue
   const switchLanguage = (lang) => {
-    const newPath = window.location.pathname.replace(/^\/(fr|en)/, `/${lang}`);
+    const currentHash = window.location.hash || "";
+    const newPath =
+      window.location.pathname.replace(/^\/(fr|en)/, `/${lang}`) + currentHash;
     window.location.href = newPath;
   };
 
@@ -38,10 +38,14 @@ export default function Navbar() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Fonction pour générer un lien d’ancre
+  const anchorLink = (id) =>
+    isHomePage ? `#${id}` : `/${currentLocale}/#${id}`;
+
   return (
     <nav className="navbar navbar-expand-lg fixed-top bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" href={`/${currentLocale}`}>
+        <a className="navbar-brand" href={anchorLink("accueil")}>
           <img src={monlogo} alt="monlogo" />
         </a>
         <button
@@ -58,38 +62,27 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarColor01">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <a className="nav-link" href={`/${currentLocale}`}>
+              <a className="nav-link" href={anchorLink("accueil")}>
                 {texts.home}
               </a>
             </li>
             <li className="nav-item">
-              {isHomePage ? (
-                <a className="nav-link" href="#mesprojets">
-                  {texts.projects}
-                </a>
-              ) : (
-                <a className="nav-link" href={`/${currentLocale}#mesprojets`}>
-                  {texts.projects}
-                </a>
-              )}
+              <a className="nav-link" href={anchorLink("mesprojets")}>
+                {texts.projects}
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href={`/${currentLocale}/messervices`}>
+              <a className="nav-link" href={anchorLink("services")}>
                 {texts.services}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href={`/${currentLocale}/moncv`}>
-                {texts.cv}
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href={`/${currentLocale}/apropos`}>
+              <a className="nav-link" href={anchorLink("apropos")}>
                 {texts.about}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href={`/${currentLocale}/contact`}>
+              <a className="nav-link" href={anchorLink("contact")}>
                 {texts.contact}
               </a>
             </li>

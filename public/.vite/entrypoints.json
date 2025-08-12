@@ -1,0 +1,77 @@
+{
+  "base": "/build/",
+  "entryPoints": {
+    "app": {
+      "css": [
+        "/build/assets/app-NpmA5kap.css"
+      ],
+      "dynamic": [],
+      "js": [
+        "/build/assets/app-BHLe-lKl.js"
+      ],
+      "legacy": false,
+      "preload": []
+    },
+    "navbar": {
+      "css": [
+        "/build/assets/navbar-Do6p2cUw.css"
+      ],
+      "dynamic": [],
+      "js": [
+        "/build/assets/navbar-CTWAimi1.js"
+      ],
+      "legacy": false,
+      "preload": [
+        "/build/assets/client-DrRGiZqB.js"
+      ]
+    },
+    "footer": {
+      "css": [
+        "/build/assets/footer-fWMNU5mu.css"
+      ],
+      "dynamic": [],
+      "js": [
+        "/build/assets/footer-f8vh41rx.js"
+      ],
+      "legacy": false,
+      "preload": [
+        "/build/assets/client-DrRGiZqB.js"
+      ]
+    },
+    "mentionslegales": {
+      "css": [
+        "/build/assets/mentionslegales-B5sSi_sY.css"
+      ],
+      "dynamic": [],
+      "js": [
+        "/build/assets/mentionslegales-BzS8BJO-.js"
+      ],
+      "legacy": false,
+      "preload": [
+        "/build/assets/client-DrRGiZqB.js"
+      ]
+    },
+    "portfolio": {
+      "css": [
+        "/build/assets/portfolio-PIANIRCa.css"
+      ],
+      "dynamic": [],
+      "js": [
+        "/build/assets/portfolio-B34La0jI.js"
+      ],
+      "legacy": false,
+      "preload": [
+        "/build/assets/client-DrRGiZqB.js"
+      ]
+    }
+  },
+  "legacy": false,
+  "metadatas": {},
+  "version": [
+    "8.2.0",
+    8,
+    2,
+    0
+  ],
+  "viteServer": null
+}

@@ -1,0 +1,92 @@
+{
+  "_client-DrRGiZqB.js": {
+    "file": "assets/client-DrRGiZqB.js",
+    "name": "client"
+  },
+  "assets/app.jsx": {
+    "file": "assets/app-BHLe-lKl.js",
+    "name": "app",
+    "src": "assets/app.jsx",
+    "isEntry": true,
+    "css": [
+      "assets/app-NpmA5kap.css"
+    ]
+  },
+  "assets/components/footer/indexfooter.jsx": {
+    "file": "assets/footer-f8vh41rx.js",
+    "name": "footer",
+    "src": "assets/components/footer/indexfooter.jsx",
+    "isEntry": true,
+    "imports": [
+      "_client-DrRGiZqB.js"
+    ],
+    "css": [
+      "assets/footer-fWMNU5mu.css"
+    ]
+  },
+  "assets/components/mentionslegales/indexmentionslegales.jsx": {
+    "file": "assets/mentionslegales-BzS8BJO-.js",
+    "name": "mentionslegales",
+    "src": "assets/components/mentionslegales/indexmentionslegales.jsx",
+    "isEntry": true,
+    "imports": [
+      "_client-DrRGiZqB.js"
+    ],
+    "css": [
+      "assets/mentionslegales-B5sSi_sY.css"
+    ]
+  },
+  "assets/components/navbar/indexnavbar.jsx": {
+    "file": "assets/navbar-CTWAimi1.js",
+    "name": "navbar",
+    "src": "assets/components/navbar/indexnavbar.jsx",
+    "isEntry": true,
+    "imports": [
+      "_client-DrRGiZqB.js"
+    ],
+    "css": [
+      "assets/navbar-Do6p2cUw.css"
+    ],
+    "assets": [
+      "assets/monlogo-5wOE9CmF.png"
+    ]
+  },
+  "assets/components/portfolio/indexportfolio.jsx": {
+    "file": "assets/portfolio-B34La0jI.js",
+    "name": "portfolio",
+    "src": "assets/components/portfolio/indexportfolio.jsx",
+    "isEntry": true,
+    "imports": [
+      "_client-DrRGiZqB.js"
+    ],
+    "css": [
+      "assets/portfolio-PIANIRCa.css"
+    ],
+    "assets": [
+      "assets/bicolor-CGGGaFLl.jpg",
+      "assets/origamis-BY-9jFcs.png",
+      "assets/oflix-B80jWfGj.png",
+      "assets/Christophe CV-Bw7L8ar5.jpeg"
+    ]
+  },
+  "assets/images/portfolio/Christophe CV.jpeg": {
+    "file": "assets/Christophe CV-Bw7L8ar5.jpeg",
+    "src": "assets/images/portfolio/Christophe CV.jpeg"
+  },
+  "assets/images/portfolio/bicolor.jpg": {
+    "file": "assets/bicolor-CGGGaFLl.jpg",
+    "src": "assets/images/portfolio/bicolor.jpg"
+  },
+  "assets/images/portfolio/monlogo.png": {
+    "file": "assets/monlogo-5wOE9CmF.png",
+    "src": "assets/images/portfolio/monlogo.png"
+  },
+  "assets/images/portfolio/oflix.png": {
+    "file": "assets/oflix-B80jWfGj.png",
+    "src": "assets/images/portfolio/oflix.png"
+  },
+  "assets/images/portfolio/origamis.png": {
+    "file": "assets/origamis-BY-9jFcs.png",
+    "src": "assets/images/portfolio/origamis.png"
+  }
+}
