@@ -1,9 +1,9 @@
 {
-  "title": "About Me",
+  "title": "About",
   "intro": "My name is <strong>Christophe Tesconi</strong>. After several years working as a head chef, including experiences in London and Japan, I decided to transition into <strong>web development</strong>.",
   "goal": "My goal is simple: <strong>help my clients</strong> gain visibility and efficiency by building modern websites and applications that <strong>work for them</strong>.",
   "values": "Passionate about travel (especially in Asia), Buddhist, and committed to peace, I enjoy building projects that inspire <strong>trust, transparency, and usefulness</strong>.",
-  "cta": "Looking for a <strong>reliable and approachable</strong> developer to bring your ideas to life? <a href='/contact'>Contact me</a> — I’ll be happy to discuss your project.",
+  "cta": "Looking for a <strong>reliable and approachable</strong> developer to bring your ideas to life? <a href='#contact'>Contact me</a> — I’ll be happy to discuss your project.",
 
   "siteTitle": "How I Built This Website",
   "siteIntro": "This portfolio is a <strong>fullstack project</strong> designed to showcase my technical skills and my ability to build modern, maintainable websites from start to finish.",

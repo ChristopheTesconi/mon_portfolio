@@ -1,0 +1,39 @@
+import React from "react";
+import "../../../styles/portfolio/LeftCardProject.scss";
+
+export default function LeftCardProject({
+  titre,
+  description,
+  image,
+  github,
+  githubCTA,
+}) {
+  return (
+    <div className="left-card-project project-card">
+      <div className="project-text">
+        <h3>{titre}</h3>
+        {/* Si description est un tableau, on fait une liste */}
+        {Array.isArray(description) ? (
+          <ul>
+            {description.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>{description}</p>
+        )}
+        <a
+          href={github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cta"
+        >
+          {githubCTA}
+        </a>
+      </div>
+      <div className="project-image-container">
+        <img src={image} alt={titre} className="project-image" />
+      </div>
+    </div>
+  );
+}

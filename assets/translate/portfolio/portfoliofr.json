@@ -1,22 +1,52 @@
 {
-  "titleFreelance": "Tesconi Christophe Développeur Fullstack",
-  "introText": "Besoin d’un site ou d’un outil interne qui travaille pour vous ? Je développe des solutions web robustes qui vous rendent visible, automatisent vos tâches et vous font gagner du temps au quotidien.",
+  "titleFreelance": "Tesconi Christophe Développeur Web",
+  "introQuote": "Chaque site est un lien précieux entre vous et vos utilisateurs.",
+  "introText": "Je donne vie à vos idées digitales avec rigueur et passion, en plaçant vos besoins au cœur de chaque projet.\nFort d’un parcours unique, je vous accompagne avec transparence, engagement et authenticité.",
   "contactCTA": "Un projet ? Écrivez-moi",
   "projectsTitle": "Mes projets",
   "projects": [
     {
-      "titre": "Bicolor",
-      "description": "Site fullstack (PHP, MySQL) avec interface utilisateur simple et gestion de contenu.",
+      "titre": "Bicolor_front",
+      "description": [
+        "Site vitrine moderne réalisé avec React",
+        "Design clair et adaptable à tous les écrans avec Tailwind CSS",
+        "Navigation fluide entre les pages grâce à React Router",
+        "Interface pensée pour mobiles, tablettes et ordinateurs",
+        "Code organisé pour faciliter les évolutions"
+      ],
+      "githubCTA": "Voir sur GitHub"
+    },
+    {
+      "titre": "Bicolor_Back",
+      "description": [
+        "API développée avec Symfony pour gérer les données du site",
+        "Structure claire et facile à maintenir",
+        "Accès sécurisé avec gestion des droits et connexion",
+        "Réponses et messages d’erreurs uniformisés",
+        "Gestion complète des données avec des outils CRUD"
+      ],
       "githubCTA": "Voir sur GitHub"
     },
     {
       "titre": "Origami",
-      "description": "Réseau social avec authentification et back-office admin (Symfony + React).",
+      "description": [
+        "Gestion simple du profil : photo, mot de passe et infos perso",
+        "Système de favoris pour retrouver ses modèles préférés",
+        "Recherche intégrée pour trouver un origami rapidement",
+        "Site adaptable à tous les supports, avec éléments réutilisables",
+        "Ajout et gestion de commentaires avec messages de confirmation"
+      ],
       "githubCTA": "Voir sur GitHub"
     },
     {
       "titre": "O’flix",
-      "description": "Plateforme façon Netflix développée en Laravel avec MySQL (travail d’équipe en Agile).",
+      "description": [
+        "API Symfony pour gérer films, séries et utilisateurs",
+        "Organisation claire du code pour un suivi facile",
+        "Sécurité renforcée avec gestion des connexions",
+        "Réponses et erreurs formatées pour toutes les demandes",
+        "Création, modification et suppression de données facilement"
+      ],
       "githubCTA": "Voir sur GitHub"
     }
   ]

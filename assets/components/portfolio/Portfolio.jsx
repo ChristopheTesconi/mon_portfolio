@@ -4,7 +4,7 @@ import MesProjets from "./MesProjets";
 import MesServices from "./MesServices";
 import Apropos from "./Apropos";
 import Contact from "./Contact";
-import christophe from "../../images/portfolio/Christophe CV.jpeg";
+import TypingQuote from "./animation/TypingQuote";
 import frTexts from "../../translate/portfolio/portfoliofr.json";
 import enTexts from "../../translate/portfolio/portfolioen.json";
 
@@ -31,14 +31,15 @@ export default function Portfolio() {
         <div className="freelance-content">
           <div className="freelance-text">
             <h2>{texts.titleFreelance}</h2>
+            <TypingQuote text={texts.introQuote} />
             <p>{texts.introText}</p>
             <a href={`/${currentLocale}#contact`} className="cta">
               {texts.contactCTA}
             </a>
           </div>
-          <div className="freelance-photo">
+          {/* <div className="freelance-photo">
             <img src={christophe} alt="Christophe Tesconi" />
-          </div>
+          </div> */}
         </div>
       </section>
 

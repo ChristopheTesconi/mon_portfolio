@@ -1,5 +1,5 @@
 .services {
-  background-color: #f8f9fa;
+  background-color: rgb(31, 32, 57);
   padding: 15vh 5vw;
   text-align: center;
   min-height: 85vh;
@@ -20,7 +20,7 @@
 
   .service-card {
     // background: white;
-    background: rgb(31, 32, 57);
+    background: white;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -34,7 +34,7 @@
     }
 
     p {
-      color: white;
+      color: black;
       line-height: 1.5;
       font-size: 1rem;
     }

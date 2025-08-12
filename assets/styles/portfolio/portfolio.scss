@@ -5,6 +5,7 @@ html {
 .portfolio {
   width: 100%;
   box-sizing: border-box;
+  padding: calc(5vh + 80px) 5vw 5vh;
 }
 
 .freelance {
@@ -13,7 +14,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 90vh;
   padding-top: 170px;
 
   .freelance-content {
@@ -28,23 +29,44 @@ html {
 
   .freelance-text {
     flex: 1 1 300px;
+    display: flex;
+    flex-direction: column; // organise en colonne
+    align-items: center;
     h2 {
       font-size: 2.5rem;
       color: rgb(165, 180, 252);
       margin-bottom: 2.5rem;
+      text-align: center;
     }
+
+    .intro-quote {
+      font-style: italic;
+      font-size: 1.6rem;
+      color: rgb(200, 200, 255);
+      text-align: center;
+      margin-bottom: 2rem;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      display: inline;
+    }
+
     p {
-      font-size: 1.3rem;
+      max-width: 800px;
+      margin: 0 auto 3rem;
+      font-size: 1.2rem;
       color: white;
       line-height: 1.6;
+      text-align: justify;
     }
+
     .cta {
       color: black;
       background: linear-gradient(#8e86b5, #acaeed);
       border-radius: 50px;
       padding: 20px 30px;
       display: inline-block;
-      margin: 4vw;
+      margin: 2rem;
       text-decoration: none;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -72,84 +94,6 @@ html {
         transform: translateY(-5px) scale(1.03);
         box-shadow: 0 8px 24px rgba(165, 180, 252, 0.3);
       }
-    }
-  }
-}
-
-#mesprojets {
-  scroll-margin-top: 80px;
-
-  @media (max-width: 768px) {
-    scroll-margin-top: 300px;
-  }
-}
-.projets {
-  background-color: white;
-  padding: 5vh 5vw;
-  min-height: 85vh;
-
-  h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 3rem;
-    color: rgb(165, 180, 252);
-  }
-
-  .projets-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .projet-card {
-    background: white;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-
-    h3 {
-      color: rgb(31, 32, 57);
-      font-size: 1.4rem;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      color: #555;
-      font-size: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    .cta {
-      display: inline-block;
-      color: black;
-      background: linear-gradient(#8e86b5, #acaeed);
-      border-radius: 50px;
-      padding: 10px 20px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-      &:hover {
-        transform: translateY(-5px) scale(1.03);
-        box-shadow: 0 8px 24px rgba(165, 180, 252, 0.3);
-      }
-    }
-
-    &:hover {
-      transform: translateY(-5px) scale(1.03);
-      box-shadow: 0 8px 24px rgba(165, 180, 252, 0.2);
     }
   }
 }
