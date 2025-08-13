@@ -5,10 +5,10 @@
   "values": "Passionné de voyages (surtout en Asie), bouddhiste et engagé pour la paix, j’aime construire des projets qui inspirent <strong>confiance, transparence et utilité</strong>.",
   "cta": "Vous cherchez un développeur <strong>fiable et humain</strong> pour donner vie à vos idées ? <a href='#contact'>Écrivez-moi</a>, je serai ravi d’en discuter.",
 
-  "siteTitle": "Comment j’ai construit ce site",
-  "siteIntro": "Ce portfolio est un projet <strong>fullstack</strong> conçu pour démontrer mes compétences techniques et ma capacité à créer des sites modernes de A à Z.",
-  "siteStack": "Le <strong>back-end</strong> est développé avec <strong>Symfony 7</strong> (gestion des routes, API et rendu des pages Twig), tandis que le <strong>front-end</strong> utilise <strong>React</strong> pour la Navbar, les sections interactives et le support multilingue.",
-  "siteFeatures": "J’ai intégré <strong>Vite.js</strong> pour le bundling rapide, <strong>Bootstrap 5 (Lux)</strong> pour le style responsive, et <strong>Symfony Mailer</strong> pour un formulaire de contact fonctionnel.",
-  "siteGoal": "Le site est <strong>multilingue (français/anglais)</strong>, optimisé pour le SEO (balises meta, futur sitemap.xml) et prévu pour un <strong>déploiement sécurisé en HTTPS</strong>.",
+  "siteTitle": "Découvrez mon portfolio professionnel",
+  "siteIntro": "Ce portfolio est une vitrine interactive qui met en avant mes compétences en développement web à travers un site moderne, fluide et attractif.",
+  "siteStack": "Le site combine un back-end robuste avec Symfony 7 et un front-end entièrement développé en React pour une expérience utilisateur dynamique, rapide et responsive.",
+  "siteFeatures": "J’utilise Vite.js pour un chargement ultra-rapide, Bootstrap 5 (thème Lux) pour un design élégant et adaptable, ainsi qu’un formulaire de contact sécurisé avec Symfony Mailer.",
+  "siteGoal": "Ce site multilingue (français/anglais) est optimisé pour le SEO et pensé pour offrir une navigation fluide, sécurisée et agréable grâce au protocole HTTPS.",
   "siteCTA": "Curieux de voir le code ? <a href='https://github.com/ChristopheTesconi' target='_blank' rel='noopener noreferrer'>Consultez mon GitHub</a>."
 }
