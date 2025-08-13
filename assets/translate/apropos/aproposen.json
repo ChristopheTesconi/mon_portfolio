@@ -5,10 +5,10 @@
   "values": "Passionate about travel (especially in Asia), Buddhist, and committed to peace, I enjoy building projects that inspire <strong>trust, transparency, and usefulness</strong>.",
   "cta": "Looking for a <strong>reliable and approachable</strong> developer to bring your ideas to life? <a href='#contact'>Contact me</a> — I’ll be happy to discuss your project.",
 
-  "siteTitle": "How I Built This Website",
-  "siteIntro": "This portfolio is a <strong>fullstack project</strong> designed to showcase my technical skills and my ability to build modern, maintainable websites from start to finish.",
-  "siteStack": "The <strong>back-end</strong> is powered by <strong>Symfony 7</strong> (handling routes, API, and Twig templates), while the <strong>front-end</strong> uses <strong>React</strong> for the Navbar, interactive sections, and multilingual support.",
-  "siteFeatures": "I integrated <strong>Vite.js</strong> for ultra-fast bundling, <strong>Bootstrap 5 (Lux)</strong> for responsive styling, and <strong>Symfony Mailer</strong> for a working contact form.",
-  "siteGoal": "The site is <strong>fully bilingual (French/English)</strong>, optimized for SEO (meta tags, future sitemap.xml), and will be deployed with <strong>secure HTTPS</strong>.",
+  "siteTitle": "Discover my professional portfolio",
+  "siteIntro": "This portfolio is an interactive showcase highlighting my web development skills through a modern, smooth, and engaging website.",
+  "siteStack": "The site combines a robust back-end with Symfony 7 and a front-end fully developed in React for a dynamic, fast, and responsive user experience.",
+  "siteFeatures": "I use Vite.js for ultra-fast loading, Bootstrap 5 (Lux theme) for an elegant and adaptable design, and a secure contact form with Symfony Mailer.",
+  "siteGoal": "This bilingual site (French/English) is optimized for SEO and designed to provide smooth, secure, and pleasant navigation thanks to HTTPS.",
   "siteCTA": "Curious about the code? <a href='https://github.com/ChristopheTesconi' target='_blank' rel='noopener noreferrer'>Check it out on GitHub</a>."
 }
